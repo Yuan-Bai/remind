@@ -1,0 +1,34 @@
+#root {
+    -fx-background-radius: 5px;
+    -fx-background-color: rgb(115, 221, 255);
+}
+#minButton{
+    -fx-background-image: url(../image/icon/min_image01.png);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center;
+    -fx-background-color:  transparent;
+}
+#addButton{
+    -fx-background-image: url(../image/icon/add01.png);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center;
+    -fx-background-color:  transparent;
+}
+#title{
+    -fx-background-image:url(../image/icon/title01.png);
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+#taskListPane{
+    -fx-background-color: #d1fffc;
+    -fx-label-padding: 5px;
+}
+.task {
+    -fx-pref-width: 294px;
+    -fx-pref-height: 60px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color:  transparent;
+    -fx-effect: dropshadow(three-pass-box, #000000, 10.0, 0, 5, 5);
+}

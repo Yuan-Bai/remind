@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.controller.RemindPaneController"
+            prefHeight="800.0" prefWidth="300.0"
+            fx:id="root">
+    <children>
+        <Label fx:id="title" prefHeight="30.0" prefWidth="30.0" textAlignment="RIGHT">
+        </Label>
+        <Button fx:id="minButton" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="0"
+                prefHeight="30.0" prefWidth="30.0"
+                onMouseEntered="#enter" onMouseExited="#exited" onMouseClicked="#minimize">
+        </Button>
+        <Button fx:id="addButton" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="30.0"
+                prefHeight="30.0" prefWidth="30.0"
+                onMouseEntered="#addEnter" onMouseExited="#addExited" onMouseClicked="#create_task">
+        </Button>
+        <AnchorPane fx:id="taskListPane" AnchorPane.topAnchor="30.0" prefWidth="300.0" prefHeight="740.0" >
+            <AnchorPane styleClass="task" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" >
+            </AnchorPane>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>
